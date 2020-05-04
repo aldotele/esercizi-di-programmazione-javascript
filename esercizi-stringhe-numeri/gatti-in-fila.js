@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const numeroGatti = 44;
+const gattiPerFila = 6;
+const numeroFile = Math.ceil(numeroGatti/gattiPerFila)
+console.log('le file di gatti sono ' + numeroFile);
+const gattiMancanti = (numeroFile * gattiPerFila) - numeroGatti 
+console.log('i gatti mancanti sono ' + gattiMancanti)
