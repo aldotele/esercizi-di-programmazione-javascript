@@ -15,7 +15,9 @@
 let guessAge = (currentYear, yearOfBirth) => {
   const age = currentYear - yearOfBirth
   const yearsTo100 = 100 - age
-  return 'I\'m 26 and in ' + yearsTo100 + ' years I\'ll be 100 years old'  
+  return 'I\'m ' + age + ' and in ' + yearsTo100 + ' years I\'ll be 100 years old'  
 }
 
 console.log(guessAge(2020, 1994))
+console.log(guessAge(2050, 1994))
+console.log(guessAge(2020, 1952))
