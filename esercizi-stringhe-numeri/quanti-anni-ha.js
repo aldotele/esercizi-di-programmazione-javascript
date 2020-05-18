@@ -11,3 +11,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let guessAge = (currentYear, yearOfBirth) => {
+  const age = currentYear - yearOfBirth
+  const yearsTo100 = 100 - age
+  return 'I\'m 26 and in ' + yearsTo100 + ' years I\'ll be 100 years old'  
+}
+
+console.log(guessAge(2020, 1994))
