@@ -21,3 +21,36 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+let dessert = num => {
+const one = 'tiramisù'
+const two = 'torta della nonna '
+const three = 'cheescake alla nutella'
+const four = 'macedonia'
+
+switch (num) {
+    case 1:
+    console.log('Hai scelto il ' + one);
+    break;
+    case 2:
+    console.log('Hai scelto il ' + two);
+    break;
+    case 3:
+    console.log('Hai scelto il ' + three);
+    break;
+    case 4:
+    console.log('Hai scelto il ' + four)
+    break;
+    default:
+    console.log('Dolce non disponibile. Prova a selezionare un numero da 1 a 4')
+  }
+}
+
+dessert(5)
+dessert(1)
+
+
+
+
+
