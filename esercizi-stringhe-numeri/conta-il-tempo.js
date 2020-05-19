@@ -12,3 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let TimeCount = (seconds) => {
+  const hours = Math.floor(seconds/3600);
+  const minutes = Math.floor([(seconds/3600) - hours] * 60);
+  const secs = Math.floor(  [ [((seconds/3600) - hours) * 60] - minutes] * 60  )
+  return seconds + ' is ' + hours + ' hours' + ', ' + minutes + ' minutes ' + 'and ' + secs + ' seconds';
+}
+
+console.log(TimeCount(12560));
+console.log(TimeCount(13604));
+console.log(TimeCount(50060505));
+console.log(TimeCount(3600));
+
+
+
