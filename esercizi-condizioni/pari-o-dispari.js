@@ -15,3 +15,15 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let evenOrOdd = (num) => {
+  return num % 2 === 0 ? 0 : 1
+}
+
+console.log(evenOrOdd(13))
+console.log(evenOrOdd(12))
+console.log(evenOrOdd(50))
+console.log(evenOrOdd(77))
+console.log(evenOrOdd(7.6))
+
+
