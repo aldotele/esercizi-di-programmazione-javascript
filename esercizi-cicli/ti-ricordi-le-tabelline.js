@@ -8,3 +8,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+const tabellina = num => {
+
+let n = 0;
+while (n < num*10+1) {
+  console.log(n);
+  n += num;
+}
+}
+
+tabellina(1)
+tabellina(3)
+tabellina(10)
+
+

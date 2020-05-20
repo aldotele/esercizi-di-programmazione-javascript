@@ -19,3 +19,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+/*
+for (let i=1; i < 11; i++) {
+  console.log(i)
+}
+*/
+// capire come stampare i numeri in orizzontale e non in verticale
+
+
+
+
+
+
+
+
