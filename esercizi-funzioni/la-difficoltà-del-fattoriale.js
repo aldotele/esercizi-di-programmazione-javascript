@@ -12,3 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+const fact = num => {
+  let fattoriale = num
+  for (i = num -1; i > 0; i--) {
+    fattoriale *= i
+  }
+  return 'il fattoriale di ' + num + ' è ' + fattoriale
+}
+
+console.log(fact(3))
+console.log(fact(4))
+console.log(fact(5))
+console.log(fact(12))
+console.log(fact(7))
