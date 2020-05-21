@@ -22,6 +22,6 @@ const compare = (x, y) => {
   return x===y
 }
 
-compare(2, 3)
-compare(2, 2)
-compare(2, '2')
+console.log(compare(2, 3))
+console.log(compare(2, 2))
+console.log(compare(2, '2'))
