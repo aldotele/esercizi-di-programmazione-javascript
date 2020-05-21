@@ -25,5 +25,5 @@ const compare = (x, y) => {
 console.log(compare(2, 3))
 console.log(compare(2, 2))
 console.log(compare(2, '2'))
-console.log(compare(8, 8))
+console.log(compare(10, 10))
 
