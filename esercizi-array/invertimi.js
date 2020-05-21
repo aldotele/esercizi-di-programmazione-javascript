@@ -22,11 +22,16 @@ const twoArrays = num => {
   for (let i = 0 ; i < num; i++) {
   array[i] = Math.floor(Math.random()*10)
   } 
+
+  let arrayReverse = []
+  for(let j=array.length-1; j>=0; j--){
+    arrayReverse.push(array[j])
+  }
+
+  return [array, arrayReverse]
+
+}
   
-  return array
-}  
 console.log(twoArrays(3))
 console.log(twoArrays(7))
 console.log(twoArrays(2))
-
-// aggiungere arrayReverse
