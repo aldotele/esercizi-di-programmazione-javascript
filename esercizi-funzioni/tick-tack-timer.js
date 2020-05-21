@@ -14,3 +14,11 @@
             
   http://www.imparareaprogrammare.it
 */
+
+const countdown = num => {
+  for (i = num; i >=0; i--) {
+    console.log(i)
+  }
+}
+
+countdown(10);
