@@ -19,3 +19,28 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const program = (num1, num2) => {
+  let x = Math.floor(Math.random()* (100-1) +1);
+  if(num1 === x && num2 === x) {
+    console.log('entrambi i giocatori hanno azzeccato il numero casuale ' + x )
+  } else if (num1 === x) {
+    console.log('il giocatore 1 ha azzeccato il numero casuale ' + x)
+  } else if (num2 === x) {
+    console.log('il giocatore 2 ha azzeccato il numero casuale ' + x)
+  } else {
+     if (Math.abs(num1 - x) < Math.abs(num2 - x)) {
+      console.log('nessuno dei due ha azzeccato ma il giocatore 1 si è avvicinato di più al numero casuale ' + x)
+    } else {
+      console.log('nessuno dei due ha azzeccato ma il giocatore 2 si è avvicinato di più al numero casuale ' + x)
+    }
+  }
+}
+
+program(33, 77)
+program(33, 77)
+program(33, 77)
+program(33, 77)
+program(33, 77)
+
+// rivedere codice e aggingere casistica in cui entrambi sbaglino ma scelgano lo stesso numero
