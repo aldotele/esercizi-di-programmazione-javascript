@@ -46,36 +46,32 @@
   http://www.imparareaprogrammare.it
 */
 //associo un giorno della settimana da 0 a 6
-let weekDay
-switch(weekDay) {
+let dayNumber = Math.round(Math.random()*6)
+let day = ''
+switch(dayNumber) {
   case 0:
-  weekDay = 'monday';
+  day = 'monday';
   break
   case 1:
-  weekDay = 'tuesday'
+  day = 'tuesday'
   break
   case 2: 
-  weekDay = 'wednesday'
+  day = 'wednesday'
   break
   case 3:
-  weekDay = 'thursday'
+  dy = 'thursday'
   break
   case 4:
-  weekDay = 'friday'
+  day = 'friday'
   break
   case 5:
-  weekDay = 'saturday'
+  day = 'saturday'
   break
   case 6:
-  weekDay = 'sunday'
+  day = 'sunday'
 }
 
-
-//funzione calendario
-const calendar = (daysNumber, weekDay) => {
-
-
+let totDays = 31
+for(let i=1; i<=31; i++) {
+  
 }
-
-
-console.log(calendar())
