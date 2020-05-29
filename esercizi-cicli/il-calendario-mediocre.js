@@ -45,3 +45,37 @@
 
   http://www.imparareaprogrammare.it
 */
+//associo un giorno della settimana da 0 a 6
+let weekDay
+switch(weekDay) {
+  case 0:
+  weekDay = 'monday';
+  break
+  case 1:
+  weekDay = 'tuesday'
+  break
+  case 2: 
+  weekDay = 'wednesday'
+  break
+  case 3:
+  weekDay = 'thursday'
+  break
+  case 4:
+  weekDay = 'friday'
+  break
+  case 5:
+  weekDay = 'saturday'
+  break
+  case 6:
+  weekDay = 'sunday'
+}
+
+
+//funzione calendario
+const calendar = (daysNumber, weekDay) => {
+
+
+}
+
+
+console.log(calendar())

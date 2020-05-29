@@ -36,3 +36,24 @@ const giocoDadi = N => {
 }
 
 console.log(giocoDadi())
+
+/*  SOLUZIONE SENZA UTILIZZARE FUNZIONI
+ 
+ let N = 0
+  let giocatore1 = 0;
+  let giocatore2 = 0;
+  for (let i = 0; i < N; i++) {
+    let x = Math.round(Math.random()*(6-1)+1);
+    let y = Math.floor(Math.random()*(6-1)+1);
+    giocatore1 += x
+    giocatore2 += y 
+  }
+    if(giocatore1 === giocatore2) {
+      console.log( 'Parità: dopo ' + N + ' tiri, entrambi i giocatori hanno totalizzato ' + giocatore1 + ' punti')
+    } else if(giocatore1>giocatore2) {
+      
+    console.log('Vince il giocatore 1 con ' + giocatore1 + ' punti rispetto a ' + giocatore2 + ' punti dopo ' + N + ' tiri')
+    } else {
+      console.log('Vince il giocatore 2 con ' + giocatore2 + ' punti rispetto a ' + giocatore1 + ' punti dopo ' + N + ' tiri')
+    }
+    */
