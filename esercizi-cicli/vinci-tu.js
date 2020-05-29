@@ -14,3 +14,25 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+const giocoDadi = N => {
+  let giocatore1 = 0;
+  let giocatore2 = 0;
+  for (let i = 0; i < N; i++) {
+    let x = Math.round(Math.random()*(6-1)+1);
+    let y = Math.floor(Math.random()*(6-1)+1);
+    giocatore1 += x
+    giocatore2 += y
+  }
+    if(giocatore1 === giocatore2) {
+      return 'Parità: dopo ' + N + ' tiri, entrambi i giocatori hanno totalizzato ' + giocatore1 + ' punti'
+    } else if(giocatore1>giocatore2) {
+      return 'Vince il giocatore 1 con ' + giocatore1 + ' punti rispetto a ' + giocatore2 + ' punti dopo ' + N + ' tiri'
+    } else {
+      return 'Vince il giocatore 2 con ' + giocatore2 + ' punti rispetto a ' + giocatore1 + ' punti dopo ' + N + ' tiri'
+    }
+  
+}
+
+console.log(giocoDadi())
