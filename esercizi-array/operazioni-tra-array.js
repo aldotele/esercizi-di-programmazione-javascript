@@ -19,3 +19,28 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+let array1 = []
+array1.length = 10
+for (let i=0; i <= array1.length-1; i++) {
+  array1[i] = Math.floor(Math.random()*(10-1)+1)
+}
+console.log(array1)
+
+let array2 = []
+array2.length = 10
+for (let j=0; j <= array2.length-1; j++) {
+  array2[j] = Math.floor(Math.random()*(10-1)+1)
+}
+console.log(array2)
+
+const arrayOperation = (arr1, arr2) => {
+  let arr3 = []
+  for (let k=0; k<=arr1.length-1; k++) {
+    arr3.push(arr1[k]*[arr2[k]])
+  }
+  return console.log(arr3)
+}
+
+arrayOperation(array1, array2)
