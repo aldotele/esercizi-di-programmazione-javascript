@@ -28,3 +28,42 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let operazione = 'prodotto'  // da SCEGLIERE
+let a = 10  //da SCEGLIERE
+let b = 100  //da SCEGLIERE
+let result
+
+switch(operazione) {
+  case 'somma':
+  case 'addizione':
+  case 'addition':
+  result = a+b
+  console.log(result)
+  break;
+  case 'sottrazione':
+  case 'differenza':
+  case 'subtraction':
+  result = a-b
+  console.log(result);
+  break;
+  case 'moltiplicazione':
+  case 'prodotto':
+  case 'multiplication':
+  result = a*b
+  console.log(result)
+  break;
+  case 'divisione':
+  case 'rapporto':
+  case 'division':
+  result = a/b
+  console.log(result)
+  break;
+  case 'media':
+  case 'average':
+  result = (a+b)/2
+  console.log(result)
+  break;
+  default:
+  console.log('insert a valid operation.')
+}
