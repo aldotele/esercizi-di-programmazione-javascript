@@ -18,3 +18,55 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let v = 25 // da SCEGLIERE
+let giudizio
+
+if(v < 18) {
+  giudizio = 'insufficiente'
+} else if (v >= 18 && v < 21) {
+  giudizio = 'sufficiente'
+} else if (v >= 21 && v < 24) {
+  giudizio = 'buono'
+} else if (v >= 24 && v < 27) {
+  giudizio = 'distinto'
+} else if (v >= 27 && v <=29) {
+  giudizio = 'ottimo'
+} else if (v = 30) {
+  giudizio = 'eccellente'
+} else {
+  console.log('inserire un voto da 0 a 30')
+};
+
+console.log(giudizio)
+
+// utilizzo switch-case
+let v = 30 // da SCEGLIERE
+let giudizio
+
+switch(v) {
+  case 0: case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8: case 9: 
+  case 10: case 11: case 12: case 13: case 14: case 15: case 16: case 17:
+  giudizio = 'insufficiente'
+  break;
+  case 18: case 19: case 20: 
+  giudizio = 'sufficiente'
+  break;
+  case 21: case 22: case 23:
+  giudizio = 'buono'
+  break;
+  case 24: case 25: case 26:
+  giudizio = 'distinto'
+  break;
+  case 27: case 28: case 29:
+  giudizio = 'ottimo'
+  break;
+  case 30:
+  giudizio = 'eccellente'
+  break;
+  default:
+  console.log('voto non valido')
+
+}
+
+console.log(giudizio)
