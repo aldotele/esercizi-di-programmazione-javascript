@@ -10,3 +10,19 @@
     
   http://www.imparareaprogrammare.it
 */
+
+const accessFigure = (n, k) => {
+  let N = n.toString()
+  if (k > N.length) {
+    return 0
+  } else {
+    return N[N.length-k]
+  }
+}
+
+console.log(accessFigure(5349287694, 1)) // stampo l'ultima cifra
+console.log(accessFigure(5349287694, 2)) // stampo la penultima cifra
+console.log(accessFigure(5349287694, 3)) // stampo la terzultima cifra
+console.log(accessFigure(5349287694, 10)) // stampo la prima cifra
+console.log(accessFigure(5349287694, 11)) // k è maggiore del numero di cifre in n
+
