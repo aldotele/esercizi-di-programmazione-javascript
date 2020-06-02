@@ -20,12 +20,35 @@
   http://www.imparareaprogrammare.it
 */
 
-/*
-for (let i=1; i < 11; i++) {
-  console.log(i)
+let sequenza = ''
+
+for (let i=1; i <= 100; i++) {
+  sequenza += ' ' + i 
+  if (i===10||i===20||i===30||i===40||i===50||i===60||i===70||i===80||i===90) { // controllare se ci sia un metodo più immediato
+    sequenza += '\n'
+  }
 }
-*/
-// capire come stampare i numeri in orizzontale e non in verticale
+console.log(sequenza)
+
+
+//ALTRO METOOD --> uso un'array con i numeri ai quali bisogna andare accapo
+let sequenza = ''
+
+for (let i=1; i <= 100; i++) {
+  sequenza += ' ' + i 
+  let j = [10,20,30,40,50,60,70,80,90]
+  if (j.includes(i)) { // controllare se ci sia un metodo più immediato
+    sequenza += '\n'
+  }
+}
+console.log(sequenza)
+
+
+// esempio su come andare accapo
+console.log('ora vado accapo \necco fatto!')
+
+
+
 
 
 
