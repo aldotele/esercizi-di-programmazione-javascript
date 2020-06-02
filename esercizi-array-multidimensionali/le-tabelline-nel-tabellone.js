@@ -11,3 +11,34 @@
     
   http://www.imparareaprogrammare.it
 */
+
+//aggiungere righe e colonne degli 0 
+
+let result = 'x '
+for (let i=0; i<11; i++) {
+  for (let j=0; j<11; j++) {
+    if (i===0 && j>0) {
+      result += '[' + j + ']'
+    }
+    else if (j===0 && i>0) {
+      result += '[' + i + '] '
+    }
+    else if (i>0 && j>0) {    
+
+    result += (i*j) + ' '  // i=1 rimane fisso e j varia fino a 10 per cui avrò: i=1 e j=1 poi i=1 e j=2 poi i=1 e j=3 ecc.
+    }
+  }
+    result += '\n'  // qui stabilisco che ad ogni iterazione vado accapo, ovvero quando ho concluso ogni prodotto di i(fisso)*j(variabile)
+}
+
+console.log(result)
+
+
+//inizialmente
+var result = '\n';
+for (var i = 1; i < 11; i++) {
+    for (var j = 1; j < 11; j++) {
+        result += (i*j) + ' ';
+    }
+    result += '\n'
+}

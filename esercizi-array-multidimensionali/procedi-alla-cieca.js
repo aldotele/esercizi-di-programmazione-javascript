@@ -7,3 +7,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+//PROVA
+/*
+let risultato = ''
+for (i=0; i<20; i++) {
+  for (j=0; j<20; j++) {
+    risultato += ' ' + Math.floor(Math.random()*100)
+    
+    
+  }
+ risultato += '\n'
+}
+console.log(risultato)
+*/
