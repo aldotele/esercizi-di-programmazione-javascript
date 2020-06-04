@@ -21,11 +21,12 @@
   http://www.imparareaprogrammare.it
 */
 
+// funzione che controlla se un numero è primo
 const numPrimo = numero => {
   if (numero == 1) {
     return false
   }
-  else if (numero==3 || numero==5 || numero==7){
+  else if (numero==3 || numero==5 || numero==7){  // devo includere questa condizione altrimenti nella condizione successiva mi troverei a dividere un numero primo per sè stesso e non avrei resto
     return true
   }
   else if (numero%2>0 && numero%3>0 && numero%4>0 && numero%5>0 && numero%6>0 && numero%7>0 && numero%8>0 && numero%9>0) {
@@ -37,3 +38,12 @@ const numPrimo = numero => {
 }
 
 console.log(numPrimo(5))
+
+// scrivo la funzione che, dato un numero, mi restituisce tutti i precedenti numeri primi
+const primiNumeriPrimi = N => {
+  for (i=1; i<N; i++) {
+    if (numPrimo(i)) {
+      console.log(i)
+    }
+  }
+}
