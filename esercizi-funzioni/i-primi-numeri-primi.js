@@ -20,3 +20,20 @@
 
   http://www.imparareaprogrammare.it
 */
+
+const numPrimo = numero => {
+  if (numero == 1) {
+    return false
+  }
+  else if (numero==3 || numero==5 || numero==7){
+    return true
+  }
+  else if (numero%2>0 && numero%3>0 && numero%4>0 && numero%5>0 && numero%6>0 && numero%7>0 && numero%8>0 && numero%9>0) {
+    return true
+  } else {
+    return false
+  }
+
+}
+
+console.log(numPrimo(5))
