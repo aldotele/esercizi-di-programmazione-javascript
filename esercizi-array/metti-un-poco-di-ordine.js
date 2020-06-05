@@ -16,14 +16,32 @@
   http://www.imparareaprogrammare.it
 */
 
-/*
-let array = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4]
+// ordino in modo decrescente
+let arrMakeFall = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4]
 
-for (let i=0; i<array.length; i++) {
-  for (let j=0; j<array.length; j++) {
-    
+for (let i=0; i<arrMakeFall.length; i++) {
+  for (let j=0, swapping; j<arrMakeFall.length; j++) {
+    if (arrMakeFall[j] < arrMakeFall[j+1]) { // inizio comparando il primo elemento con il secondo. Poi ripartirò comparando sempre dal primo elemento visto che ci saranno modifiche
+      swapping = arrMakeFall[j+1]  // se il primo elemento è inferiore al secondo, dovrò invertire i due elementi nell'array servendomi di una variabile che chiamo swapping
+      arrMakeFall[j+1] = arrMakeFall[j]
+      arrMakeFall[j] = swapping
+    }
   }
 }
 
-console.log(array)
-*/
+console.log(arrMakeFall)
+
+// ordino in modo crescente
+let arrMakeGrow = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4]
+
+for (let i=0; i<arrMakeGrow.length; i++) {
+  for (let j=0, swapping; j<arrMakeGrow.length; j++) {
+    if (arrMakeGrow[j] > arrMakeGrow[j+1]) {
+      swapping = arrMakeGrow[j+1]
+      arrMakeGrow[j+1] = arrMakeGrow[j]
+      arrMakeGrow[j] = swapping
+    }   
+  }
+}
+
+console.log(arrMakeGrow)
