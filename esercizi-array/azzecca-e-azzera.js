@@ -12,3 +12,26 @@
 
   http://www.imparareaprogrammare.it
 */
+
+// creo l'array da 100 elementi con numeri tra 1 e 50. Capire come fissarla
+let array = []
+for (let i=0; i<100; i++) { 
+  array.push(Math.round(Math.random()*(50-1)+1))
+}
+console.log(array)
+
+/* TESTANDO seconda parte esercizio 
+
+let arrTest = [5,7,12,4,7,9,43,22,56, 88]
+
+let  number = window.prompt()      
+for (let j=0; j<arrTest.length; j++) {
+  
+  if(arrTest[j]%number === 0) {
+    arrTest[j]=0
+ 
+  }   
+  
+}
+console.log(arrTest)
+    */
