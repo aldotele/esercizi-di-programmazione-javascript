@@ -17,3 +17,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let N=2   // la considero come l'altezza della matrice che creo, ovvero N sarà il numero di elementi(array)
+let M=3 // la considero come la larghezza ovvero il numero di elementi in ogni singolo elemento(array)
+let matrice = []
+let sommaTutto=0
+
+for (let i=0; i<N; i++) {
+  matrice[i] = []
+  for (let j=0; j<M; j++) {
+    casuale = Math.floor(Math.random()*(99)+1)
+    sommaTutto += casuale
+    matrice[i][j] = casuale    
+  }
+}
+
+console.log(matrice, sommaTutto)
