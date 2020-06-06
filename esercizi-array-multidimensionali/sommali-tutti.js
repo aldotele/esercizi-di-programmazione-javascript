@@ -26,7 +26,7 @@ let sommaTutto=0
 for (let i=0; i<N; i++) {
   matrice[i] = []
   for (let j=0; j<M; j++) {
-    casuale = Math.floor(Math.random()*(99)+1)
+    casuale = Math.round(Math.random()*(99)+1)
     sommaTutto += casuale
     matrice[i][j] = casuale    
   }
