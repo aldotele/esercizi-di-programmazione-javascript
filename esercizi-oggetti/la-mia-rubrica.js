@@ -19,3 +19,69 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function Contact(name, number, mail) {
+  this.name = name;
+  this.number = number;
+  this.mail = mail;
+}
+
+let contacts = {
+  list: [],
+  getAll: function() {
+    for(let i=0; i<this.list.length; i++) {
+      console.log(this.list[i])
+    }
+  },
+  add: function(name, number, mail) {
+    this.list.push(new Contact(name, number, mail))
+  },
+  editByIndex: function(index, newNumber, newMail) {
+    this.list[index]['number'] = newNumber;
+    this.list[index]['mail'] = newMail;    
+  },
+  removeByIndex: function(index) {
+    this.list.splice(index, 1)
+  },
+  searchByName: function(nameArg) {
+    for (let i=0; i<this.list.length; i++) {  
+        if (this.list[i]['name'].toLowerCase() === nameArg.toLowerCase()) {
+          return this.list[i]
+        }
+    }
+    return 'nome non valido'
+  },
+  getIndexByName: function(nameArg) {
+    for (let i=0; i<this.list.length; i++) {  
+      if (this.list[i]['name'].toLowerCase() === nameArg.toLowerCase()) {
+        return i
+      }
+    }
+    return 'nome non valido'
+  }
+};
+
+
+// aggiungo i contatti
+contacts.add('Bob', '3484848***', 'bob@mail.com');
+contacts.add('Joe', '3392348***', 'joe@mail.com');
+contacts.add('Jessie', '3669966***', 'jessie@mail.com')
+contacts.add('Jessie 2', '3886572***', 'jessie2@mail.com')
+// stampo tutti i contatti
+contacts.getAll()
+// modifico il primo contatto aggiornando numero e mail
+contacts.editByIndex(0, '3384848***')
+// elimino l'ultimo contatto
+contacts.removeByIndex(3)
+console.log(contacts.list[3]) // undefined perchè eliminato
+// cerco un contatto in base al nome
+console.log(contacts.searchByName('Joe'))
+console.log(contacts.searchByName('joe'))
+console.log(contacts.searchByName('JJoe'))
+
+// trovo l'indice di un contatto in base al nome
+console.log(contacts.getIndexByName('Bob'))
+console.log(contacts.getIndexByName('Joe'))
+console.log(contacts.getIndexByName('Jessie'))
+console.log(contacts.getIndexByName('JESSIE'))
+console.log(contacts.getIndexByName('Jessi'))
